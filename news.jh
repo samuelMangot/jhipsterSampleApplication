@@ -1,0 +1,19 @@
+entity News {
+	title String
+    date Date
+    shortDescription String
+    content String
+    expirationDate Date
+}
+
+enum Language {
+    FRENCH
+}
+
+// Set pagination options
+paginate News with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
